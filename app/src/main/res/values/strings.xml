@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BirthdayCelebrationTemi</string>
+    <string name="en">en</string>
+    <string name="letMe">Let me sing a Happy Birthday song!</string>
+    <string name="start">Start</string>
+    <string name="who_is_having_a_birthday_tell_me_the_name">Who is having a birthday? Tell me the name.</string>
+    <string name="enter_name_label">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_old_is_the_person">How old is the person?</string>
+    <string name="blow_out_the_candles">Blow out the candles</string>
+</resources>
