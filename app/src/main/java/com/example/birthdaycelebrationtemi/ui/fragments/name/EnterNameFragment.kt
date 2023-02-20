@@ -5,33 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.birthdaycelebrationtemi.R
 import com.example.birthdaycelebrationtemi.ui.analytics.ScreenNames
 import com.example.birthdaycelebrationtemi.ui.activities.MainActivity
-import kotlinx.android.synthetic.main.fragment_age.*
 import kotlinx.android.synthetic.main.fragment_enter_name.*
+import kotlinx.android.synthetic.main.fragment_first.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class EnterNameFragment : Fragment() {
 
-/**
- * A simple [Fragment] subclass.
- * Use the [AgeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class AgeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
@@ -39,7 +25,7 @@ class AgeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_age, container, false)
+        return inflater.inflate(R.layout.fragment_enter_name, container, false)
     }
 
 
@@ -49,9 +35,23 @@ class AgeFragment : Fragment() {
 
 
 
-        age_constraint_layout.setOnClickListener {
-            mainActivity.navigateToSpecificFragment(ValidateAgeFragment(), ScreenNames.ValidateAgeFragment)
+
+
+        // Setting On Click Listener
+        proceedBtn.setOnClickListener {
+
+            // Getting the user input
+            val text = etVisitorName.text
+
+            // Showing the user input
+            //Toast.makeText(activity, text, Toast.LENGTH_SHORT).show()
+            if(!text.isBlank()) {
+                mainActivity.navigateToSpecificFragment(AgeFragment(), ScreenNames.AgeFragment)
+
+            }
         }
+
+
     }
 
 }
