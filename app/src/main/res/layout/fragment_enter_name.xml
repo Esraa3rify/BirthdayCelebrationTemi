@@ -77,28 +77,35 @@
 
         </androidx.cardview.widget.CardView>
 
-        <FrameLayout
-            android:id="@+id/fl_proceed_name"
+<!--        <FrameLayout-->
+<!--            android:id="@+id/fl_proceed_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/cvName"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/cvName">-->
+
+
+
+
+<!--        </FrameLayout>-->
+
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/cvName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/cvName">
+            android:layout_gravity="center"
+            android:src="@drawable/ic_proceed" />
 
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tv_proceed_name"
-                android:layout_width="80dp"
-                android:layout_height="71dp"
-                android:background="@drawable/button_bag_dynamic"
-                android:enabled="false"
-                android:text="" />
+        <Button
+            android:id="@+id/proceedBtn"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_proceed" />
-        </FrameLayout>
+            android:background="@drawable/button_border_disabled"
+            app:layout_constraintEnd_toEndOf="parent" />
 
 
     </LinearLayout>

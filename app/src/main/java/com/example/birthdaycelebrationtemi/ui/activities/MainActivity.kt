@@ -2,7 +2,6 @@ package com.example.birthdaycelebrationtemi.ui.activities
 
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.birthdaycelebrationtemi.R
@@ -11,7 +10,7 @@ import com.example.birthdaycelebrationtemi.ui.fragments.FirstFragment
 import com.robotemi.sdk.Robot
 import com.robotemi.sdk.TtsRequest
 import com.robotemi.sdk.listeners.OnRobotReadyListener
-import java.util.*
+
 
 
 class MainActivity : AppCompatActivity(), OnRobotReadyListener
@@ -27,6 +26,7 @@ class MainActivity : AppCompatActivity(), OnRobotReadyListener
         sRobot = Robot.getInstance();
 
         inflateInitialFragment()
+
     }
 
     override fun onStart() {

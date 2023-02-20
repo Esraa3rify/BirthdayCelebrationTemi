@@ -1,4 +1,4 @@
-package com.example.birthdaycelebrationtemi.ui.fragments
+package com.example.birthdaycelebrationtemi.ui.fragments.age
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.example.birthdaycelebrationtemi.R
 import com.example.birthdaycelebrationtemi.ui.analytics.ScreenNames
 import com.example.birthdaycelebrationtemi.ui.activities.MainActivity
+import com.example.birthdaycelebrationtemi.ui.fragments.StartFragment
+import com.robotemi.sdk.TtsRequest
 import kotlinx.android.synthetic.main.fragment_age.*
 
 
@@ -22,6 +24,8 @@ class AgeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_age, container, false)
     }

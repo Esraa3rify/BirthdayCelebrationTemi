@@ -1,15 +1,17 @@
 package com.example.birthdaycelebrationtemi.ui.fragments
 
+import android.icu.number.NumberFormatter.with
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
+import com.github.dhaval2404.imagepicker.ImagePicker
 import android.view.ViewGroup
 import com.example.birthdaycelebrationtemi.R
 import com.example.birthdaycelebrationtemi.ui.activities.MainActivity
 import com.example.birthdaycelebrationtemi.ui.analytics.ScreenNames
 import kotlinx.android.synthetic.main.fragment_start.*
-import kotlinx.android.synthetic.main.fragment_validate__name.*
+
 
 
 class StartFragment : Fragment() {
@@ -35,6 +37,10 @@ class StartFragment : Fragment() {
 
         strt2_btn.setOnClickListener {
             mainActivity.navigateToSpecificFragment(BlowOutCandlesFragment(), ScreenNames.BlowOutCandlesFragment)
+
+
+
+
         }
     }
 }

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.birthdaycelebrationtemi.R
 import com.example.birthdaycelebrationtemi.ui.activities.MainActivity
 import com.example.birthdaycelebrationtemi.ui.analytics.ScreenNames
-import kotlinx.android.synthetic.main.fragment_age.*
+
 
 
 class ThankUouFragment : Fragment() {

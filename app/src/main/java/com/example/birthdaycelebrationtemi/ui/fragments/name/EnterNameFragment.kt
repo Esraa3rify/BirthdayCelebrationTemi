@@ -1,16 +1,15 @@
-package com.example.birthdaycelebrationtemi.ui.fragments
+package com.example.birthdaycelebrationtemi.ui.fragments.name
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.example.birthdaycelebrationtemi.R
 import com.example.birthdaycelebrationtemi.ui.analytics.ScreenNames
 import com.example.birthdaycelebrationtemi.ui.activities.MainActivity
+import com.example.birthdaycelebrationtemi.ui.fragments.age.AgeFragment
 import kotlinx.android.synthetic.main.fragment_enter_name.*
-import kotlinx.android.synthetic.main.fragment_first.*
 
 class EnterNameFragment : Fragment() {
 
