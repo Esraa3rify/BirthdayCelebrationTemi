@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), OnRobotReadyListener
         // Initialize robot instance
         sRobot = Robot.getInstance();
 
+        //changeFragment(FirstFragment())
         inflateInitialFragment()
 
     }
@@ -43,12 +44,15 @@ class MainActivity : AppCompatActivity(), OnRobotReadyListener
         sRobot!!.removeOnRobotReadyListener(this);
     }
 
+
+
+
+
+
     private fun inflateInitialFragment()
     {
         navigateToSpecificFragment(FirstFragment(), ScreenNames.FirstFragment);
     }
-
-
 
     override fun onRobotReady(isReady: Boolean) {
         if (isReady) {
@@ -60,6 +64,9 @@ class MainActivity : AppCompatActivity(), OnRobotReadyListener
             sRobot.speak(ttsRequest)
         }
     }
+
+
+
 
     fun navigateToSpecificFragment(fragment:Fragment,screenName: ScreenNames)
     {

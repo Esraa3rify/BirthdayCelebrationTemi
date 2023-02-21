@@ -32,7 +32,7 @@
         app:srcCompat="@drawable/footer" />
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/textAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -81,7 +81,7 @@ Did I hear you right?"
         app:layout_constraintEnd_toStartOf="@id/yes_btn"
         app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@+id/textAge"
         app:layout_constraintVertical_bias="0.785" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -99,7 +99,7 @@ Did I hear you right?"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@id/no_btn"
-        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@+id/textAge"
         app:layout_constraintVertical_bias="0.785" />
 
 

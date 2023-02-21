@@ -1,5 +1,6 @@
 package com.example.birthdaycelebrationtemi.ui.fragments
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,9 +10,7 @@ import com.example.birthdaycelebrationtemi.R
 import com.example.birthdaycelebrationtemi.ui.activities.MainActivity
 import com.example.birthdaycelebrationtemi.ui.analytics.ScreenNames
 import kotlinx.android.synthetic.main.fragment_blow_out_candles.*
-import kotlinx.android.synthetic.main.fragment_enter_name.*
-import kotlinx.android.synthetic.main.fragment_first.*
-import kotlinx.android.synthetic.main.fragment_first.btn_start
+
 
 class BlowOutCandlesFragment : Fragment() {
 
@@ -29,14 +28,25 @@ class BlowOutCandlesFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_blow_out_candles, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+
+
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
         val mainActivity = activity as MainActivity
 
+        val music: MediaPlayer = MediaPlayer.create(activity, R.raw.birth)
 
 
-      btn_blow_out.setOnClickListener {
+
+        music.start()
+
+        btn_blow_out.setOnClickListener {
             mainActivity.navigateToSpecificFragment(ThankUouFragment(), ScreenNames.ThankUouFragment)
         }
+
+
+
+
     }
 }

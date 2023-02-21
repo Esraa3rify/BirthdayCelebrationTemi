@@ -103,17 +103,18 @@ class FirstFragment : Fragment() {
             ) {
                 val responseCode = response.code()
                 if (responseCode == 200) {
-                    Toast.makeText(activity, "Uploaded !", Toast.LENGTH_SHORT).show()
+                   // Toast.makeText(activity, "Uploaded !", Toast.LENGTH_SHORT).show()
                     val mainActivity = activity as MainActivity
                     mainActivity.navigateToSpecificFragment(EnterNameFragment(), ScreenNames.EnterNameFragment)
+                   // mainActivity.changeFragment(EnterNameFragment())
 
                 }
             }
 
 
             override fun onFailure(call: Call<AddNewFaceResponseModel>, t: Throwable) {
-                Toast.makeText(activity, "Failed due ${t.message}", Toast.LENGTH_SHORT)
-                    .show()
+              //  Toast.makeText(activity, "Failed due ${t.message}", Toast.LENGTH_SHORT)
+                //    .show()
                 val mainActivity = activity as MainActivity
                 mainActivity.navigateToSpecificFragment(EnterNameFragment(), ScreenNames.EnterNameFragment)
             }

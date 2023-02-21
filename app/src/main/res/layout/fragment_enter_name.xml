@@ -77,25 +77,6 @@
 
         </androidx.cardview.widget.CardView>
 
-<!--        <FrameLayout-->
-<!--            android:id="@+id/fl_proceed_name"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:layout_constraintBottom_toBottomOf="@+id/cvName"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="@+id/cvName">-->
-
-
-
-
-<!--        </FrameLayout>-->
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_proceed" />
 
         <Button
             android:id="@+id/proceedBtn"
